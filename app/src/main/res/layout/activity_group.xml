@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="20dp"
+            android:weightSum="8">
+
+            <ImageView
+                android:id="@+id/onback"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:src="@drawable/ic_baseline_arrow_back_24" />
+
+            <TextView
+                android:id="@+id/textheading"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_weight="6"
+                android:fontFamily="@font/graphikmedium"
+                android:gravity="start"
+                android:text="Create Saving Plan"
+
+                android:textColor="#303030"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/graphikregular"
+            android:text="Saving Plan Name"
+            android:textColor="#303030"
+            android:textSize="16dp" />
+
+        <EditText
+            android:id="@+id/plan_name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/custom_textbox"
+
+            android:fontFamily="@font/graphikmedium"
+            android:gravity="center_vertical"
+            android:hint="John"
+            android:paddingStart="16dp"
+            android:textColor="#80303030" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/graphikregular"
+            android:text="Unified Payment Interface (UPI)"
+            android:textColor="#303030"
+            android:textSize="16dp" />
+
+        <EditText
+            android:id="@+id/plan_UPI"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/custom_textbox"
+            android:fontFamily="@font/graphikmedium"
+            android:gravity="center_vertical"
+            android:hint="Someone@upi"
+            android:paddingStart="16dp"
+            android:textColor="#80303030" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/graphikregular"
+            android:text="Saving Amount"
+            android:textColor="#303030"
+            android:textSize="16dp" />
+
+        <EditText
+            android:id="@+id/plan_saving"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/custom_textbox"
+            android:fontFamily="@font/graphikmedium"
+            android:gravity="center_vertical"
+            android:hint="999999"
+            android:inputType="numberDecimal"
+            android:paddingStart="16dp"
+            android:textColor="#80303030" />
+
+
+        <Button
+            android:id="@+id/endddate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/custom_button"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:text="select end date"
+            android:textColor="@color/white"
+            tools:ignore="TextContrastCheck" />
+
+
+        <android.widget.Button
+            android:id="@+id/totalmembers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="35dp"
+            android:background="@drawable/custom_button"
+            android:paddingStart="38dp"
+            android:paddingEnd="39dp"
+            android:text="Add Member"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+
+        <TextView
+            android:id="@+id/creategrp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="55dp"
+            android:text="CONTINUE"
+            android:textColor="@color/red"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            android:visibility="visible" />
+
+
+    </LinearLayout>
+</ScrollView>

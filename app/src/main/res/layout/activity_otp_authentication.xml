@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".OtpAuthentication">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="20dp">
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_arrow_back_24"/>
+            <TextView
+                android:id="@+id/textheading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/graphikmedium"
+                android:text="mContri"
+                android:textAlignment="center"
+                android:textColor="@color/themeColour"
+                android:textSize="30dp"
+                android:textStyle="bold">
+
+            </TextView>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/enter_otp"
+            android:layout_marginStart="32dp"
+            android:text="Enter your OTP"
+            android:textSize="18sp"
+            android:layout_below="@+id/textheading"
+            android:layout_marginTop="112dp"
+            android:fontFamily="@font/graphikmedium"
+            />
+
+        <EditText
+            android:id="@+id/getotp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/custom_textbox"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textColor="@color/black">
+
+        </EditText>
+
+
+        <TextView
+            android:id="@+id/resendotp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/verifyotp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="55dp"
+            android:layout_marginBottom="80dp"
+            android:fontFamily="@font/graphikmedium"
+            android:text="Resend the Code"
+            android:textColor="#FF735C"
+            android:textSize="18sp">
+
+        </TextView>
+
+        <android.widget.Button
+            android:id="@+id/verifyotp"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_below="@+id/progressbarofotpauth"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="center"
+            android:background="@drawable/custom_button"
+            android:fontFamily="@font/graphikmedium"
+            android:paddingLeft="40dp"
+            android:textSize="19dp"
+            android:paddingRight="40dp"
+            android:text="Continue"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF">
+
+        </android.widget.Button>
+        <TextView
+            android:id="@+id/changenumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/verifyotp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="150dp"
+            android:fontFamily="@font/graphikmedium"
+            android:text="Change Phone Number"
+            android:textColor="#6E6E6E"
+            android:textSize="18sp"/>
+
+    </LinearLayout>
+
+
+</ScrollView>

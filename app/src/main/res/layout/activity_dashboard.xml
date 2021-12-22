@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Dashboard">
+
+    <TextView
+        android:id="@+id/contri"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:text="mContri"
+        android:textAlignment="center"
+        android:textColor="@color/red"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="624dp"
+        android:layout_below="@+id/contri"
+        android:layout_above="@+id/layoutbelow">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/grouplist"
+                android:layout_width="match_parent"
+                android:layout_height="400sp"
+                android:layout_marginTop="40dp"
+
+                tools:listitem="@layout/upcoming_plans_item" />
+
+            <android.widget.Button
+                android:id="@+id/cardViewButton"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="100dp"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/new_commit"
+                android:fontFamily="@font/graphikmedium"
+                android:paddingTop="16dp"
+                android:paddingBottom="15dp"
+                android:text="New Committee"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="19sp" />
+
+            <android.widget.Button
+                android:id="@+id/join_commit"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/join_commit"
+                android:fontFamily="@font/graphikmedium"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:text="Joined Committee"
+                android:textAllCaps="false"
+                android:textColor="@color/red"
+                android:textSize="19sp" />
+
+
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:id="@+id/layoutbelow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/red"
+            android:text="Saving Plan"
+            android:textColor="#FFFFFF"
+            tools:ignore="TextContrastCheck" />
+
+        <Button
+            android:id="@+id/gotoprofile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/tab_unselected"
+            android:text="Profile"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+
+</RelativeLayout>

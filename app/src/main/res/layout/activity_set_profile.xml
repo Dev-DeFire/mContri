@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".setProfile">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="20dp">
+            <ImageView
+                android:id="@+id/onback"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_arrow_back_24"/>
+            <TextView
+                android:id="@+id/textheading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingEnd="24dp"
+                android:fontFamily="@font/graphikmedium"
+                android:text="mContri"
+                android:gravity="center"
+                android:textColor="@color/themeColour"
+                android:textSize="30dp"
+                android:textStyle="bold">
+
+            </TextView>
+        </LinearLayout>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_marginTop="75dp"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/getuserimage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_profile"
+            app:civ_border_color="#E1E1E1"
+            app:civ_border_width="1dp" />
+
+
+        <TextView
+            android:layout_marginTop="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Profile Picture"
+            android:textSize="16sp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#303030"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/graphikregular"
+            android:text="Full Name"
+            android:textColor="#303030"
+            android:textSize="16dp" />
+
+        <EditText
+            android:id="@+id/getusername"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:hint="John Doe"
+            android:gravity="center_vertical"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/custom_edittext"
+            android:paddingStart="16dp"
+            android:textColor="@color/black"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/graphikregular"
+            android:text="Mobile Number"
+            android:textColor="#303030"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/mobile_edt"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:hint="+91 9843627561"
+            android:gravity="center_vertical"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/custom_edittext"
+            android:paddingStart="16dp"
+            android:textColor="@color/black"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/graphikregular"
+            android:text="Email Address (Optional)"
+            android:textColor="#303030"
+            android:textSize="16dp" />
+
+        <EditText
+            android:id="@+id/email_id"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:hint="someone@example.com"
+            android:gravity="center_vertical"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/custom_edittext"
+            android:paddingStart="16dp"
+            android:textColor="@color/black"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/graphikregular"
+            android:text="UPI ID"
+            android:textColor="#303030"
+            android:textSize="16dp" />
+
+        <EditText
+            android:id="@+id/upi_id"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:hint="Someone@UPI"
+            android:gravity="center_vertical"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/custom_edittext"
+            android:paddingStart="16dp"
+            android:textColor="@color/black"/>
+
+
+        <android.widget.Button
+            android:id="@+id/createaccount"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/custom_button"
+            android:fontFamily="@font/graphikmedium"
+            android:paddingLeft="64dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="15dp"
+            android:paddingRight="65dp"
+            android:text="Update"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="19sp" />
+
+
+
+        <ProgressBar
+            android:id="@+id/progressbarofsetProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/getusername"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="47dp"
+            android:outlineAmbientShadowColor="@color/themeColour"
+            android:outlineSpotShadowColor="@color/themeColour"
+            android:visibility="invisible">
+
+        </ProgressBar>
+    </LinearLayout>
+</ScrollView>
